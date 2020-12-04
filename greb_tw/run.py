@@ -72,7 +72,7 @@ class TwGreb:
             )
         headers = self.header
         headers[
-            'cookie'] = 'personalization_id="v1_a8rI8ElLnTN1/+XCuWaIxw=="; guest_id=v1%3A160516768660954465; _ga=GA1.2.384448571.1605167692; _gid=GA1.2.1834082828.1606979779; external_referer=padhuUp37zjgzgv1mFWxJ12Ozwit7owX|0|8e8t2xd8A2w%3D; ads_prefs="HBERAAA="; kdt=zMr0aw1r0mUlIMvb1xjdw0e9yhx2mdzUINDvyZ82; remember_checked_on=1; auth_token=86c1e22406898be2cae58e5c4d7852af2a7b67c9; twid=u%3D1315856555254792192; lang=zh-cn; _twitter_sess=BAh7DCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCI05c7t1AToMY3NyZl9p%250AZCIlMTgxYWJjZWJhZjgyODkxOGFhZTYxYTYzMzI2YTI0NWQ6B2lkIiVjNTA1%250AYTc0OWFjYjVhYzZmYzVlNzkxZTE2MzRiZTU1MToJdXNlcmwrCQDAVLeQ3EIS%250AOh9sYXN0X3Bhc3N3b3JkX2NvbmZpcm1hdGlvbiIVMTYwNjk4MTgyNjEzOTAw%250AMDoecGFzc3dvcmRfY29uZmlybWF0aW9uX3VpZCIYMTMxNTg1NjU1NTI1NDc5%250AMjE5Mg%253D%253D--045668918785f9047cd9d0c4caf40a18a247c30f; ct0=9dd46cca56ced20fdb94acf4646d09923f6b82c04995e6136653b065af530dee8f5056dbd1e35e6ee1798d1c1a8576491d3ee31cb9ce5a45b384de3d350b1a3371f18314140ac298a89fe17056c15871'
+            'cookie'] = self.config.Cookie
         try:
             headers['x-csrf-token'] = str(re.findall(r'ct0=(.*?);', headers['cookie'])[0]).strip()
         except:
