@@ -6,7 +6,7 @@ from typing import Optional
 
 @dataclass
 class Config:
-    Username: Optional[str] = 'HSesports'
+    Username: Optional[str] = None
     Proxy: Optional[str] = None
     Guest_token: str = None
     Cookie: str = None
