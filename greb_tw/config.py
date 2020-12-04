@@ -13,7 +13,7 @@ class Config:
     Followers_count: int = 50
     User_id: str = None
     Tweet_count: int = 50
-    Topic_search:str='China'
+    Topic_search:str= None
     Topic_count: int = 50
     # 方法
     Following = False
